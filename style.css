@@ -1,0 +1,312 @@
+body{
+    
+}
+
+
+
+.header{
+    background:url('img/img-bg.jpg') center top no-repeat;
+    background-size: cover;
+   
+    min-height: 1012px;
+    padding-top: 3rem;
+}
+.header a{
+    color:#fff;
+}
+
+/* .head-social-link{
+    display:flex;
+   
+    font-size: 0.9rem;
+}
+
+.logo-social{
+    border:solid blue 2px;
+}
+ .head-social-link{
+display: inline-flex;
+text-align: center;
+margin:0 10px;
+} 
+.img-link{
+    display: block
+}
+.lang-website{
+    border:solid red 2px;
+    display: flex;
+}
+ */
+
+
+.navbar-expand-lg {
+   
+    border-radius: 54px;
+    padding: 25px ;
+}
+
+
+
+
+
+/**
+VOICI LE CODE POUR LA SECTION A PROPOS
+**/
+
+.sect-apropros{
+    padding-top:2rem;
+    
+}
+.apropos-content{
+    margin-bottom: 5rem;
+}
+
+.title-sect{
+    text-align:center;
+    position: relative;
+
+}
+.title-sect::after{
+    content: url('img/fleur.png');
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 100%;
+}
+
+.text-apropos{
+    padding-top: 50px;
+
+    padding-bottom: 25px;
+}
+
+
+.all-img-apropos{
+    display: flex;
+    flex-wrap: wrap;
+    
+    
+}
+
+.img-apropos{
+    
+    display: inline-block;
+    max-width: 50%;
+    height: auto;
+    padding: 5px;
+}
+.apropos-link{
+    position: relative;
+    /* padding:2rem 0; */
+    padding-top:32px;
+    margin-bottom:64px;
+}
+.btn-propos{
+    background:#117651;
+    color:#FFF;
+    display:block;
+    position: absolute;
+    right: 100px;
+}
+.btn-propos:hover{
+    background:#3ac592;
+    color:#FFF;
+}
+
+
+/* pour la bande verte */
+.bande-verte{
+    background:#117651;
+    color:#fff;
+    /* min-height: 180px; */
+    /* padding:3rem 0; */
+    text-align: center;
+}
+.bande-verte a{
+    color:inherit;
+    display: inline-block;
+
+}
+
+.apropos-link-bande-verte{
+    font-size: 2rem;
+    /* position: relative; */
+    
+}
+
+.apropos-bande-verte{
+    /* position:relative; */
+}
+
+
+
+.first-block{
+    display: block;
+    width: 50%;
+    margin:0 auto;
+
+}
+.demi-cercle1{
+    transform: translate(0% ,1%);
+}
+.demi-cercle2{
+    transform: translate(0% ,0%);
+}
+
+/* pour la partie Service */
+
+.sect-service{
+    padding-top:20px;
+}
+.bg-img-service{
+    
+    background: url('img/bg-service.jpg');
+    background-size: cover;
+    margin-top: 60px;
+}
+.bg-degrater{
+    padding:1.4rem 1rem;
+    background: rgba(0,0,0,0.9);
+    color:#FFF;
+    text-align: center;
+    width: 100%;
+}
+
+.article-description{
+    padding: 1rem 0.4rem
+}
+.img-service{
+    display: block;
+    border-radius: 50%;
+    
+
+    margin: 5px auto;
+    background: #FFF;
+    width: 250px;
+    height: 250px;
+    
+}
+.img-service img{
+    /* transform: translate(50%, 50%); */
+    transform: translate(4%, 27%);
+
+}
+
+
+
+
+
+
+/* POUR LA PARTIE RENDUE  */
+
+.rendu{
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+.rendu .title-sect{
+    margin-bottom: 2.5rem;
+}
+
+.nav-randu{
+    
+    border:solid 1px blue;
+    text-align: center !important;
+    margin-bottom: 1rem;
+    
+}
+.nav-randu a{
+    border:solid 1px red;
+    display: inline-block;
+    padding:0.3rem 0.5rem;
+    position: relative;
+    margin: 0;
+    font-size: 12px;
+    
+}
+.nav-randu a:hover{
+   background: #117651;
+   color:#FFF;
+   text-decoration: none;
+    
+}
+.nav-randu a::before{
+   position: absolute;
+    display: block;
+    content:"";
+    width: 0;
+    height: 14px;
+    border:solid 1px #000;
+    left: -4px;
+    top: 8px;
+}
+.nav-randu a:first-of-type::before{
+   
+     border:none; 
+   
+    
+}
+
+.img-rendu{
+    margin:5px;
+    
+}
+
+
+
+
+
+
+/* POUR LA PARTIE IL PARLE */
+.parle{
+    background: #f0f0f0;
+    padding: 10px 0;
+}
+ .name-user{
+text-align: center;
+}
+
+
+
+
+/* POUR LA PARTIE ACTUALITé */
+
+.actualite-content
+{
+    /* position: relative; */
+    padding-top: 50px;
+}
+.actu-1 img,.actu-2 img{
+    float: left;
+    width: 50%;
+    margin-right: 14px;
+
+}
+/* .actu-badge{
+    display: block;
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    color:#FFF;
+    background:green;
+
+} */
+.actu1-line{
+clear: both;
+}
+.actu-1 .text,.actu-2 .text{
+    font-size: .9rem;
+
+}
+.h6{
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: .92rem;
+    display: block;
+}
+
+
+
+.footer{
+    background: rgba(13,13,13,1)
+}
