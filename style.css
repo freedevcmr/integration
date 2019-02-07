@@ -1,5 +1,5 @@
 body{
-    
+    font-size: 16px;
 }
 
 
@@ -9,44 +9,73 @@ body{
     background-size: cover;
    
     min-height: 1012px;
-    padding-top: 3rem;
+    /* padding-top: 3rem; */
+}
+.degrader{
+border: solid 2px red;
+background:rgba(0,0,0,0.5);
+min-height: 1012px;
 }
 .header a{
     color:#fff;
 }
 
-/* .head-social-link{
-    display:flex;
-   
-    font-size: 0.9rem;
-}
-
 .logo-social{
-    border:solid blue 2px;
-}
- .head-social-link{
-display: inline-flex;
-text-align: center;
-margin:0 10px;
-} 
-.img-link{
-    display: block
-}
-.lang-website{
-    border:solid red 2px;
+    padding: 1rem 0;
     display: flex;
+    justify-content: space-around;
+
 }
- */
+.logo-social a:first-of-type{
+    padding-right: .5rem ;
+
+}
+
+.lang-website{
+ display: flex;
+ justify-content: space-around;
+ align-items: center;
+ padding:20px 0px;
+ color:#000 !important;
+}
 
 
-.navbar-expand-lg {
+.navbar-expand-lg, .navbar-expand-md {
    
     border-radius: 54px;
-    padding: 25px ;
+    padding: 40px;
+}
+.bg-light{
+    background: #ffffff !important;
 }
 
 
 
+.solgan{
+
+    text-align: center;
+    padding-top:4rem;
+    margin-top: 4rem;
+    color:#FFF;
+
+}
+
+.solgan .h1{
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+.head-small{
+    display: block;
+    font-size: 16px;
+    margin-bottom: 50px;
+}
+.btn-header-info{
+    background: #117651
+}
+.btn-header-info:hover{
+    background: grba(17,10,81,0.2);
+    color:red;
+}
 
 
 /**
@@ -118,20 +147,15 @@ VOICI LE CODE POUR LA SECTION A PROPOS
 .bande-verte{
     background:#117651;
     color:#fff;
-    /* min-height: 180px; */
-    /* padding:3rem 0; */
     text-align: center;
+    margin-top: 2.5rem;
 }
 .bande-verte a{
     color:inherit;
     display: inline-block;
-
 }
-
 .apropos-link-bande-verte{
-    font-size: 2rem;
-    /* position: relative; */
-    
+    font-size: 2rem;   
 }
 
 .apropos-bande-verte{
@@ -147,10 +171,16 @@ VOICI LE CODE POUR LA SECTION A PROPOS
 
 }
 .demi-cercle1{
-    transform: translate(0% ,1%);
+    transform: translate(0% ,-23%);
 }
 .demi-cercle2{
-    transform: translate(0% ,0%);
+    transform: translate(0% ,4%);
+}
+.demi-trait1{
+    transform: translate(0% ,-33%);
+}
+.demi-trait2{
+    transform: translate(0% ,11%);
 }
 
 /* pour la partie Service */
@@ -252,25 +282,38 @@ VOICI LE CODE POUR LA SECTION A PROPOS
     
 }
 
-
-
-
-
-
 /* POUR LA PARTIE IL PARLE */
 .parle{
     background: #f0f0f0;
     padding: 10px 0;
 }
- .name-user{
-text-align: center;
+.img-user{
+    display: block;
+    margin: auto;
+    padding-top: 45px;
+    padding-bottom: 20px;
 }
+.message{
+    text-align:center;
+}
+.temoin-user{
+    text-align:left;
+    margin-top: 10px;
+}
+.user-contact{
+    display: block;
+    text-align: right;
+    margin-top: 15px;
 
+}
+ 
 
 
 
 /* POUR LA PARTIE ACTUALITé */
-
+.actualite{
+    padding:2rem 0 3rem 0;
+}
 .actualite-content
 {
     /* position: relative; */
@@ -308,5 +351,215 @@ clear: both;
 
 
 .footer{
-    background: rgba(13,13,13,1)
+    background: rgba(13,13,13,.9);
+    color:#fefefe;
+    padding: 2rem 0 0 0;
+    position: relative;
 }
+
+.footer a{
+    color:#fefefe;
+}
+
+.frist-row-footer{
+    border:solid 1px blue;
+    padding:  0rem 0rem  1rem 0rem;
+}
+.frist-row-footer .h3{
+    font-size: 1.3rem ;
+}
+.footer .h5{
+    text-transform: uppercase;
+}
+.footer::before{
+    position: absolute;
+    content:"";
+    height: 0;
+    width: 100%;
+    border-top: 2px solid rgba(202, 202, 202, 0.3);
+    /* z-index: -1; */
+    top: 15%;
+}
+.form-footer{
+display: flex;
+}
+
+.btn-send-footer{
+background:#117651;
+border-top-left-radius: 0;
+border-bottom-left-radius:0;
+}
+.btn-img{
+    height: 24px;
+margin-left: 14px;
+
+margin-right: 14px;
+}
+
+.second-row-footer{
+    padding-top: 2rem;
+
+}
+
+.second-row-text a{
+    display: block;
+    height: auto;
+    width: auto;
+    padding:5px 0;
+
+}
+
+
+.footer-ul{
+    padding-left: 0;
+    margin-top: 20px;
+}
+
+.footer-ul li{
+    position: relative;
+ list-style: none;
+ /* height: 1rem; */
+ margin-top: 5px;
+ margin-bottom: 5px;
+ border:solid 1px red;
+}
+.logo1::before{
+    content: url('img/s1.png');
+    margin-right: 13px;
+    vertical-align: top;
+
+}
+.logo2::before{
+    content: url('img/s2.png');
+    margin-right: 13px;
+    vertical-align: top;
+
+}
+.logo3::before{
+    content: url('img/s3.png');
+    margin-right: 13px;
+    vertical-align: top;
+
+}
+.logo4::before{
+    content: url('img/s4.png');
+    margin-right: 13px;
+    vertical-align: top;
+
+}
+.logo5::before{
+    content: url('img/s5.png');
+    margin-right: 13px;
+    vertical-align: top;
+
+}
+.logo6::before{
+    content: url('img/s6.png');
+    margin-right: 13px;
+    vertical-align: top;
+
+}
+.catalogue-text{
+    font-size: 1rem;
+}
+.joindre{
+    padding-left: 45px;
+}
+.localisation{
+position: relative;
+/* padding-left: 33px; */
+}
+.localisation::before{
+position: absolute;
+content: url('img/j1.png');
+top: 0;
+left:-37%;
+}
+.phone{
+    padding: 1.4rem 0;
+    position: relative;
+}
+.phone::before{
+    position: absolute;
+content: url('img/j2.png');
+top: 38%;
+
+left: -19%;
+}
+
+.foot-email{
+    position:relative;
+}
+.foot-email::before{
+    position:absolute;
+    content: url('img/j3.png');
+    left: -32%;
+}
+.part-before-copyright{
+    padding: 3rem 0;
+    position: relative;
+    z-index: 1;
+}
+.part-before-copyright::after{
+    position: absolute;
+    content:"";
+    height: 0;
+    width: 100%;
+    border-top: 2px solid rgba(202, 202, 202, 0.3);
+    z-index: -1;
+    top: 58%;
+   
+}
+.partage{
+    display: block;
+    text-align: center;
+    color:rgba(255,255,255,0.3)
+}
+ .foo-logo-link{
+    display: flex;
+
+    align-items: center;
+    
+    justify-content: center;
+   
+ }
+
+
+
+ .copyrigth{
+     background: #000;
+     padding: 5px 0;
+ }
+
+ @media (min-width: 576px) {
+    .copyrigth span{
+        float:right; 
+       
+    }
+   
+  }
+  
+  @media (min-width: 768px) {
+    .navbar-brand {
+        display: none;
+    }
+   
+  }
+  
+  @media (min-width: 992px) {
+    .navbar::before{
+        position: absolute;
+        content: url('img/logo2.png');
+        border-radius: 80px;
+        right: 36%;
+        }
+
+  }
+  
+  @media (min-width: 1200px) {
+     .navbar::before{
+      
+        right: 38%;
+        }
+  }
+  
